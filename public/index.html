@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Filters</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Image Filters</h1>
+    <p>Upload a photo, pick a filter, download the result. Runs entirely in your browser — no account, no upload to any server, no cost.</p>
+  </header>
+
+  <main>
+    <section id="upload-section" class="card">
+      <div id="dropzone" class="dropzone">
+        <input type="file" id="file-input" accept="image/*" hidden />
+        <div id="dropzone-empty">
+          <p><strong>Click to choose a photo</strong> or drag one here</p>
+          <p class="hint">JPG or PNG, up to 10&nbsp;MB</p>
+        </div>
+        <img id="preview-img" hidden alt="Uploaded preview" />
+      </div>
+      <button id="change-photo-btn" hidden>Choose a different photo</button>
+    </section>
+
+    <section id="styles-section" class="card" hidden>
+      <h2>Pick a filter</h2>
+      <div id="styles-grid" class="styles-grid"></div>
+    </section>
+
+    <section id="results-section" hidden>
+      <h2>Results</h2>
+      <div id="results-grid" class="results-grid"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
