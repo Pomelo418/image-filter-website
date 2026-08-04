@@ -10,12 +10,10 @@ These are color-grading / compositing effects computed on-device (saturation, co
 
 ## Run it
 
-```bash
-npm install
-npm start
-```
+This is a static site — no build step, no server required. Either:
 
-Open http://localhost:3000. (You can also just open `public/index.html` directly in a browser — no server required.)
+- Open `public/index.html` directly in a browser, or
+- Serve it locally, e.g. `npx serve public` or `python3 -m http.server -d public`, then visit the printed URL.
 
 ## Why not real AI style transfer (chibi, Makoto Shinkai, etc.)?
 
